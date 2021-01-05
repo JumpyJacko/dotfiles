@@ -1,0 +1,1 @@
+/home/jacksonl/compositor.sh
