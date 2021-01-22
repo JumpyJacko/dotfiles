@@ -50,3 +50,4 @@
 ;(unpin! t)
 
 (package! evil-colemak-basics)
+(package! elcord)

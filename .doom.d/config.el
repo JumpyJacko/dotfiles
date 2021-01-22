@@ -61,6 +61,11 @@
 (require 'key-chord)(key-chord-mode 1) ;; Turns on key-chord-mode
 (key-chord-define evil-insert-state-map "nn" 'evil-normal-state)
 
+;; Emacs Discord Rich Presence
+(require 'elcord)
+(elcord-mode)
+
+
 ;; Treemacs
 (use-package treemacs
   :ensure t
