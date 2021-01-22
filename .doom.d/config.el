@@ -62,9 +62,6 @@
 (key-chord-define evil-insert-state-map "nn" 'evil-normal-state)
 
 ;; Emacs Discord Rich Presence
-(require 'elcord)
-(elcord-mode)
-
 
 ;; Treemacs
 (use-package treemacs
