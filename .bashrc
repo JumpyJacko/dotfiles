@@ -139,7 +139,7 @@ ex ()
   fi
 }
 
-export EDITOR=emacs
+export EDITOR=vim
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 fish
 
