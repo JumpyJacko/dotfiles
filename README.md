@@ -4,3 +4,7 @@ Using [this method](https://www.atlassian.com/git/tutorials/dotfiles) to store t
 
 Extra Requirements:
 - Mononoki Nerd Font
+- Comfortaa Google Font
+
+Screenshots:
+![Polybar](Polybar.png)
