@@ -1,8 +1,13 @@
+#!/bin/bash
+
 #
 # ~/.bashrc
 #
 
 [[ $- != *i* ]] && return
+
+stty -ixon      # Disable ctrl-s and ctrl-q.
+shopt -s autocd # Allows you to cd into directory merely by typing the directory name.
 
 colors() {
 	local fgc bgc vals seq0
@@ -75,8 +80,6 @@ if ${use_color} ; then
 		PS1='\[\033[01;32m\][\u@\h\[\033[01;37m\] \W\[\033[01;32m\]]\$\[\033[00m\] '
 	fi
 
-	alias ls='ls -la --colour=auto'
-	alias grep='grep --colour=auto'
 	alias egrep='egrep --colour=auto'
 	alias fgrep='fgrep --colour=auto'
 else
@@ -139,7 +142,16 @@ ex ()
   fi
 }
 
-export EDITOR=vim
-alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-fish
+# Replace system commands with custom commands
+alias ls='exa -la --git --group-directories-first'
 
+# Commit dotfiles to my dotfile git repo
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+# Aliases for convenience
+alias e='$EDITOR'
+alias p='sudo pacman'
+
+export EDITOR=vim
+
+fish
