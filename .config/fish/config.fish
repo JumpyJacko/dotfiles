@@ -16,6 +16,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # Aliases for convenience
 alias e='$EDITOR'
 alias p='sudo pacman'
+alias brightness='xrandr --output eDP1 --brightness'
 
 # navigation
 alias ..='cd ..' 
