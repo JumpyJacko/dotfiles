@@ -11,7 +11,7 @@ bspc config top_padding          36
 bspc config focused_border_color \#60b595
 bspc config normal_border_color  \#2d4a44
 
-bspc config split_ratio          0.5
+bspc config split_ratio          0.525
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
