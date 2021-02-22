@@ -8,3 +8,4 @@ Extra Requirements:
 
 Screenshots:
 ![Polybar](Polybar.png)
+![Workspace](Workspaces.png)
